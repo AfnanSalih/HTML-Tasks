@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="a.html" method="POST">
+        <div>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" required placeholder="enter your name" name="username">
+        </div>
+        <hr>
+        <div>
+            <label for="pass">Password:</label><br>
+            <input type="password" id="pass" placeholder="enter strong password" name="pass">
+        </div>
+        <hr>
+        <div>
+            <label for="mobile">Mobile:</label><br>
+            <input  type="tel"  id="mobile" placeholder="+96412743465" name="mobile">
+        </div>
+        <hr>
+        <div>
+            <label for="mail">Email:</label><br>
+            <input type="email" id="mail" required placeholder="a@gmail.com" name="mail">
+        </div>
+        <hr>
+        <div>
+            <label for="book">Subject:</label><br>
+            <select id="book" name="book" >
+               <optgroup label="scientific books">
+                  <option value="1">book1</option>
+                  <option value="2">book2</option>
+                  <option value="3">book3</option>
+                </optgroup>
+                <optgroup label="romance books">
+                    <option value="1">book4</option>
+                    <option value="2">book5</option>
+                    <option value="3">book6</option>
+                  </optgroup>
+            </select>          
+        </div>
+    
+        <hr>
+
+        <input type="hidden"  name="id" value="3487">
+        
+        <div>
+            <input type="submit" value="send" >
+        </div>
+
+    </form>
+</body>
+</html>
