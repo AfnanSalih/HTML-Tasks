@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+   <form action="a.html" method="POST">
+        <div>
+            <label for="user">Username:</label><br>
+            <input type="text" id="user" placeholder="enter username" readonly value="afnan" name="user" >
+        </div>
+        <hr>
+        <div>
+            <label for="mail">Email:</label><br>
+            <input type="email" id="mail" placeholder="enter email" autofocus name="mail">
+        </div>
+        <hr>
+        <div>
+            <label for="pass">Password:</label><br>
+            <input type="password" id="pass" placeholder="enter password" required maxlength="5" name="pass" >
+        </div>
+
+        <hr>
+            <div>
+                <h4>Choose your favorite programming books </h4>
+                <div>
+                    <input type="checkbox" id="progbook1" name="progbook1" value="c++">
+                    <label for="progbook1">C++ book </label>
+                </div>
+                <div>
+                    <input type="checkbox" id="progbook2" name="progbook2" value="java">
+                    <label for="progbook2">Java book </label>
+                </div>
+                <div>
+                    <input type="checkbox" id="progbook3" name="progbook3" value="python">
+                    <label for="progbook3">Python book </label>
+                </div> 
+            </div>
+        <hr>
+        <div>
+            <h4>Choose your favorite oprating system</h4>
+            <div>
+                <input type="radio" id="window" name="os" value="window">
+                <label for="window">Window</label>
+            </div>
+            <div> 
+                <input type="radio" id="mac" name="os" value="mac">
+                <label for="mac">Mac</label>
+            </div>
+            <div>
+                <input type="radio" id="linux" name="os" value="linux">
+                <label for="linux">Linux</label>
+            </div> 
+        </div>          
+        <hr>
+
+
+        <!--the difference between checkbox && Radio buttons:-
+        - Checkboxes: let a user select ZERO or MORE options of a limited number of choices. 
+        - Radio buttons: let a user select ONLY ONE of a limited number of choices.
+        -->
+        <div>
+            <input type="hidden" id="usrid" value="12345" name="id"> 
+        </div>
+
+        <div>
+           <input type="submit" value="Send">
+        </div> 
+    </form>  
+</body>
+</html>
