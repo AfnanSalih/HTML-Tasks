@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.background-img {
+  background-image: url(../img/imgtask9.jpg);
+  height: 720px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.box {
+  position: absolute;
+  background: #3f0a2b;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 350px;
+  width: 350px;
+  color: white;
+  padding: 40px;
+  box-shadow: 1px 15px 60px #fe9548;
+  overflow: hidden;
+  border: 3px solid rgb(61, 40, 61);
+}
+.box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.09);
+  transition: 0.5s;
+}
+.box:hover:before {
+  left: -50%;
+  transform: skewX(-5deg);
+}
+.box .content {
+  position: absolute;
+  border: 2px solid #d66718;
+  text-align: center;
+  top: 15px;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  padding: 20px;
+}
+.content h2 {
+  font-size: 25px;
+  padding: 10px;
+}
+.box span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.box span:nth-child(1) {
+  transform: rotate(0deg);
+}
+.box span:nth-child(2) {
+  transform: rotate(90deg);
+}
+.box span:nth-child(3) {
+  transform: rotate(180deg);
+}
+.box span:nth-child(4) {
+  transform: rotate(270deg);
+}
+
+.box span::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(131, 91, 121);
+  animation: move 3s linear infinite;
+}
+@keyframes move {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  50% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  50.1% {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+}
